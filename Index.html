@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>onmouseover Example</title>
+    <style>
+        #hover-element {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="hover-element" onmouseover="changeColor()">Hover Over Me!</div>
+
+<script>
+    function changeColor() {
+        var element = document.getElementById('hover-element');
+        element.style.backgroundColor = 'lightgreen';
+    }
+</script>
+
+</body>
+</html>
